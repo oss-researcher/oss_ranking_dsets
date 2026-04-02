@@ -21,7 +21,7 @@ Each record includes:
 - Number of New bugs (N)  
 - Number of Fixed bugs (F)  
 - Number of Assigned bugs (A)  
-- Number of Reopened bugs (R)  
+- Number of Reopened bugs (R)  i.e. Fixed or Verified status.
 
 ## Usage
 This dataset is used to:
