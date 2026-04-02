@@ -30,7 +30,7 @@ This folder contains spreadsheet-based calculations supporting the analysis, val
 6. **6. Temporal Ranks Comparison & Borda.xlsx**
    - Consolidates rankings using d-sets across multiple temporal windows (e.g., each of 6 bi-monthly periods).
    - Implements Borda count aggregation to derive a consensus ranking from individual temporal rankings ($R_1$–$R_6$).
-   - Enables comparison between each of the period-wise rankings & borda ranking with the aggregated d-set ranking to assess consistency and convergence.
+   - Enables comparison between each of the period-wise rankings & Borda ranking with the aggregated d-set ranking to assess consistency and convergence.
    - Supports temporal stability analysis of the proposed d-set framework.
      
 ## Purpose
