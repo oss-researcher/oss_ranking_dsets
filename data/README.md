@@ -19,9 +19,9 @@ The dataset contains aggregated bug lifecycle information for multiple OSS produ
 Each record includes:
 - Product name  
 - Number of New bugs (N)  
-- Number of Fixed bugs (F)  
+- Number of Fixed bugs (F)  i.e. Resolved or Verified status 
 - Number of Assigned bugs (A)  
-- Number of Reopened bugs (R)  i.e. Fixed or Verified status.
+- Number of Reopened bugs (R) 
 
 ## Usage
 This dataset is used to:
