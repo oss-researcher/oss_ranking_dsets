@@ -1,0 +1,385 @@
+"W","half_month","Product","New","Fixed","Assigned","Reopened"
+"R1","9_a_2023","bugzilla.mozilla.org",1,5,1,0
+"R1","9_a_2023","CA Program",0,4,1,0
+"R1","9_a_2023","Calendar",3,1,0,0
+"R1","9_a_2023","Conduit",3,8,0,0
+"R1","9_a_2023","Data Platform and Tools",4,21,1,0
+"R1","9_a_2023","Developer Infrastructure",0,15,1,0
+"R1","9_a_2023","GeckoView",2,7,1,1
+"R1","9_a_2023","MailNews Core",12,6,0,1
+"R1","9_a_2023","Mozilla QA",0,0,0,0
+"R1","9_a_2023","mozilla.org",0,16,0,0
+"R1","9_a_2023","NSS",1,5,0,0
+"R1","9_a_2023","Release Engineering",2,8,1,0
+"R1","9_a_2023","Remote Protocol",2,6,0,0
+"R1","9_a_2023","support.mozilla.org",1,12,0,0
+"R1","9_a_2023","WebExtensions",14,10,0,0
+"R1","9_a_2023","Webtools",0,3,0,0
+"R1","9_b_2023","bugzilla.mozilla.org",2,9,1,0
+"R1","9_b_2023","CA Program",2,18,1,0
+"R1","9_b_2023","Calendar",6,4,0,0
+"R1","9_b_2023","Conduit",4,4,0,0
+"R1","9_b_2023","Data Platform and Tools",4,26,0,0
+"R1","9_b_2023","Developer Infrastructure",15,18,1,0
+"R1","9_b_2023","GeckoView",5,4,0,0
+"R1","9_b_2023","MailNews Core",7,10,0,1
+"R1","9_b_2023","Mozilla QA",0,0,0,0
+"R1","9_b_2023","mozilla.org",0,17,0,0
+"R1","9_b_2023","NSS",1,2,0,0
+"R1","9_b_2023","Release Engineering",2,16,1,0
+"R1","9_b_2023","Remote Protocol",9,17,0,0
+"R1","9_b_2023","support.mozilla.org",1,2,1,0
+"R1","9_b_2023","WebExtensions",9,3,1,1
+"R1","9_b_2023","Webtools",1,3,0,0
+"R1","10_a_2023","bugzilla.mozilla.org",2,9,0,0
+"R1","10_a_2023","CA Program",0,10,0,0
+"R1","10_a_2023","Calendar",12,3,0,0
+"R1","10_a_2023","Conduit",6,4,0,1
+"R1","10_a_2023","Data Platform and Tools",7,25,0,0
+"R1","10_a_2023","Developer Infrastructure",5,16,0,0
+"R1","10_a_2023","GeckoView",10,6,1,0
+"R1","10_a_2023","MailNews Core",7,2,1,0
+"R1","10_a_2023","Mozilla QA",0,0,0,0
+"R1","10_a_2023","mozilla.org",0,13,0,0
+"R1","10_a_2023","NSS",1,4,0,0
+"R1","10_a_2023","Release Engineering",6,12,0,0
+"R1","10_a_2023","Remote Protocol",2,5,0,0
+"R1","10_a_2023","support.mozilla.org",2,3,0,1
+"R1","10_a_2023","WebExtensions",7,12,0,2
+"R1","10_a_2023","Webtools",1,0,0,0
+"R1","10_b_2023","bugzilla.mozilla.org",1,9,0,0
+"R1","10_b_2023","CA Program",0,2,0,0
+"R1","10_b_2023","Calendar",5,8,0,0
+"R1","10_b_2023","Conduit",6,8,0,1
+"R1","10_b_2023","Data Platform and Tools",5,7,0,0
+"R1","10_b_2023","Developer Infrastructure",3,13,0,0
+"R1","10_b_2023","GeckoView",3,13,0,0
+"R1","10_b_2023","MailNews Core",12,12,0,1
+"R1","10_b_2023","Mozilla QA",0,0,0,0
+"R1","10_b_2023","mozilla.org",0,20,0,0
+"R1","10_b_2023","NSS",46,18,1,0
+"R1","10_b_2023","Release Engineering",1,18,0,0
+"R1","10_b_2023","Remote Protocol",8,22,0,0
+"R1","10_b_2023","support.mozilla.org",5,1,0,0
+"R1","10_b_2023","WebExtensions",8,15,0,0
+"R1","10_b_2023","Webtools",4,3,0,0
+"R2","11_a_2023","bugzilla.mozilla.org",1,13,0,0
+"R2","11_a_2023","CA Program",0,5,0,0
+"R2","11_a_2023","Calendar",2,7,0,1
+"R2","11_a_2023","Conduit",2,3,0,0
+"R2","11_a_2023","Data Platform and Tools",6,29,1,0
+"R2","11_a_2023","Developer Infrastructure",2,18,0,0
+"R2","11_a_2023","GeckoView",5,7,1,1
+"R2","11_a_2023","MailNews Core",18,11,0,1
+"R2","11_a_2023","Mozilla QA",0,0,0,0
+"R2","11_a_2023","mozilla.org",0,20,0,0
+"R2","11_a_2023","NSS",221,39,9,3
+"R2","11_a_2023","Release Engineering",0,13,3,0
+"R2","11_a_2023","Remote Protocol",8,8,0,0
+"R2","11_a_2023","support.mozilla.org",1,6,0,1
+"R2","11_a_2023","WebExtensions",21,14,0,0
+"R2","11_a_2023","Webtools",0,4,0,0
+"R2","11_b_2023","bugzilla.mozilla.org",2,10,0,0
+"R2","11_b_2023","CA Program",0,10,3,0
+"R2","11_b_2023","Calendar",8,2,0,0
+"R2","11_b_2023","Conduit",1,9,0,0
+"R2","11_b_2023","Data Platform and Tools",8,22,1,0
+"R2","11_b_2023","Developer Infrastructure",2,12,0,0
+"R2","11_b_2023","GeckoView",6,9,0,0
+"R2","11_b_2023","MailNews Core",15,9,1,0
+"R2","11_b_2023","Mozilla QA",0,0,0,0
+"R2","11_b_2023","mozilla.org",1,21,0,0
+"R2","11_b_2023","NSS",3,11,1,0
+"R2","11_b_2023","Release Engineering",3,27,0,1
+"R2","11_b_2023","Remote Protocol",9,26,0,0
+"R2","11_b_2023","support.mozilla.org",2,11,0,0
+"R2","11_b_2023","WebExtensions",4,7,0,1
+"R2","11_b_2023","Webtools",0,1,0,0
+"R2","12_a_2023","bugzilla.mozilla.org",1,13,0,0
+"R2","12_a_2023","CA Program",0,5,0,0
+"R2","12_a_2023","Calendar",3,0,0,0
+"R2","12_a_2023","Conduit",2,9,0,0
+"R2","12_a_2023","Data Platform and Tools",12,23,0,1
+"R2","12_a_2023","Developer Infrastructure",6,13,0,2
+"R2","12_a_2023","GeckoView",6,14,0,0
+"R2","12_a_2023","MailNews Core",9,18,0,0
+"R2","12_a_2023","Mozilla QA",0,0,0,0
+"R2","12_a_2023","mozilla.org",2,33,0,0
+"R2","12_a_2023","NSS",86,9,6,4
+"R2","12_a_2023","Release Engineering",2,25,0,0
+"R2","12_a_2023","Remote Protocol",3,18,0,0
+"R2","12_a_2023","support.mozilla.org",0,5,0,0
+"R2","12_a_2023","WebExtensions",19,11,2,0
+"R2","12_a_2023","Webtools",1,5,0,0
+"R2","12_b_2023","bugzilla.mozilla.org",0,7,1,0
+"R2","12_b_2023","CA Program",0,2,0,0
+"R2","12_b_2023","Calendar",2,0,0,0
+"R2","12_b_2023","Conduit",0,8,0,0
+"R2","12_b_2023","Data Platform and Tools",31,38,0,1
+"R2","12_b_2023","Developer Infrastructure",0,0,0,0
+"R2","12_b_2023","GeckoView",5,6,0,1
+"R2","12_b_2023","MailNews Core",20,4,0,1
+"R2","12_b_2023","Mozilla QA",0,0,0,0
+"R2","12_b_2023","mozilla.org",0,14,0,0
+"R2","12_b_2023","NSS",1,2,0,0
+"R2","12_b_2023","Release Engineering",2,3,0,0
+"R2","12_b_2023","Remote Protocol",4,6,1,1
+"R2","12_b_2023","support.mozilla.org",0,3,0,0
+"R2","12_b_2023","WebExtensions",6,7,1,1
+"R2","12_b_2023","Webtools",3,2,0,0
+"R3","1_a_2024","bugzilla.mozilla.org",1,10,0,0
+"R3","1_a_2024","CA Program",0,10,2,0
+"R3","1_a_2024","Calendar",8,2,0,0
+"R3","1_a_2024","Conduit",2,10,0,0
+"R3","1_a_2024","Data Platform and Tools",9,32,0,0
+"R3","1_a_2024","Developer Infrastructure",10,12,0,0
+"R3","1_a_2024","GeckoView",2,3,0,0
+"R3","1_a_2024","MailNews Core",14,13,0,0
+"R3","1_a_2024","Mozilla QA",0,0,0,0
+"R3","1_a_2024","mozilla.org",1,15,0,0
+"R3","1_a_2024","NSS",2,8,0,0
+"R3","1_a_2024","Release Engineering",3,17,0,0
+"R3","1_a_2024","Remote Protocol",7,8,0,0
+"R3","1_a_2024","support.mozilla.org",2,19,0,0
+"R3","1_a_2024","WebExtensions",17,14,2,1
+"R3","1_a_2024","Webtools",6,2,0,0
+"R3","1_b_2024","bugzilla.mozilla.org",5,10,0,0
+"R3","1_b_2024","CA Program",0,8,1,0
+"R3","1_b_2024","Calendar",3,3,0,0
+"R3","1_b_2024","Conduit",7,12,0,0
+"R3","1_b_2024","Data Platform and Tools",6,26,0,1
+"R3","1_b_2024","Developer Infrastructure",5,14,0,0
+"R3","1_b_2024","GeckoView",3,7,2,0
+"R3","1_b_2024","MailNews Core",14,11,0,2
+"R3","1_b_2024","Mozilla QA",0,0,0,0
+"R3","1_b_2024","mozilla.org",1,23,0,0
+"R3","1_b_2024","NSS",11,19,1,0
+"R3","1_b_2024","Release Engineering",2,14,0,0
+"R3","1_b_2024","Remote Protocol",12,31,1,0
+"R3","1_b_2024","support.mozilla.org",5,11,0,1
+"R3","1_b_2024","WebExtensions",37,25,4,1
+"R3","1_b_2024","Webtools",3,2,0,1
+"R3","2_a_2024","bugzilla.mozilla.org",1,20,1,0
+"R3","2_a_2024","CA Program",0,7,2,0
+"R3","2_a_2024","Calendar",6,3,0,0
+"R3","2_a_2024","Conduit",6,10,1,0
+"R3","2_a_2024","Data Platform and Tools",12,29,0,0
+"R3","2_a_2024","Developer Infrastructure",7,16,1,1
+"R3","2_a_2024","GeckoView",4,7,0,1
+"R3","2_a_2024","MailNews Core",16,10,0,0
+"R3","2_a_2024","Mozilla QA",0,0,0,0
+"R3","2_a_2024","mozilla.org",0,34,0,0
+"R3","2_a_2024","NSS",2,5,0,1
+"R3","2_a_2024","Release Engineering",1,18,0,0
+"R3","2_a_2024","Remote Protocol",9,25,0,0
+"R3","2_a_2024","support.mozilla.org",1,8,3,0
+"R3","2_a_2024","WebExtensions",51,12,6,0
+"R3","2_a_2024","Webtools",1,1,0,0
+"R3","2_b_2024","bugzilla.mozilla.org",137,11,5,2
+"R3","2_b_2024","CA Program",1,2,2,0
+"R3","2_b_2024","Calendar",17,0,0,0
+"R3","2_b_2024","Conduit",12,2,1,1
+"R3","2_b_2024","Data Platform and Tools",19,23,0,1
+"R3","2_b_2024","Developer Infrastructure",13,5,0,0
+"R3","2_b_2024","GeckoView",17,8,1,0
+"R3","2_b_2024","MailNews Core",63,12,1,1
+"R3","2_b_2024","Mozilla QA",1,0,0,0
+"R3","2_b_2024","mozilla.org",1,14,0,0
+"R3","2_b_2024","NSS",8,5,3,0
+"R3","2_b_2024","Release Engineering",5,18,0,1
+"R3","2_b_2024","Remote Protocol",5,10,0,1
+"R3","2_b_2024","support.mozilla.org",2,10,0,0
+"R3","2_b_2024","WebExtensions",28,6,2,1
+"R3","2_b_2024","Webtools",8,4,0,0
+"R4","3_a_2024","bugzilla.mozilla.org",2,14,1,1
+"R4","3_a_2024","CA Program",0,9,1,0
+"R4","3_a_2024","Calendar",6,2,0,1
+"R4","3_a_2024","Conduit",7,8,0,0
+"R4","3_a_2024","Data Platform and Tools",3,29,0,1
+"R4","3_a_2024","Developer Infrastructure",9,14,1,0
+"R4","3_a_2024","GeckoView",3,6,0,0
+"R4","3_a_2024","MailNews Core",7,16,0,0
+"R4","3_a_2024","Mozilla QA",0,0,0,0
+"R4","3_a_2024","mozilla.org",1,21,0,0
+"R4","3_a_2024","NSS",3,2,0,0
+"R4","3_a_2024","Release Engineering",2,15,1,0
+"R4","3_a_2024","Remote Protocol",7,34,0,0
+"R4","3_a_2024","support.mozilla.org",0,9,0,0
+"R4","3_a_2024","WebExtensions",8,5,1,0
+"R4","3_a_2024","Webtools",7,4,0,0
+"R4","3_b_2024","bugzilla.mozilla.org",4,28,0,1
+"R4","3_b_2024","CA Program",0,6,4,0
+"R4","3_b_2024","Calendar",3,1,0,0
+"R4","3_b_2024","Conduit",18,31,1,1
+"R4","3_b_2024","Data Platform and Tools",10,32,1,0
+"R4","3_b_2024","Developer Infrastructure",4,25,0,1
+"R4","3_b_2024","GeckoView",4,9,0,0
+"R4","3_b_2024","MailNews Core",24,9,0,1
+"R4","3_b_2024","Mozilla QA",0,0,0,0
+"R4","3_b_2024","mozilla.org",0,22,0,0
+"R4","3_b_2024","NSS",4,2,0,0
+"R4","3_b_2024","Release Engineering",3,52,0,0
+"R4","3_b_2024","Remote Protocol",5,13,0,0
+"R4","3_b_2024","support.mozilla.org",1,3,0,1
+"R4","3_b_2024","WebExtensions",20,7,1,3
+"R4","3_b_2024","Webtools",1,7,0,0
+"R4","4_a_2024","bugzilla.mozilla.org",0,24,0,0
+"R4","4_a_2024","CA Program",0,6,1,0
+"R4","4_a_2024","Calendar",7,4,0,0
+"R4","4_a_2024","Conduit",7,5,0,0
+"R4","4_a_2024","Data Platform and Tools",11,33,0,0
+"R4","4_a_2024","Developer Infrastructure",5,13,0,0
+"R4","4_a_2024","GeckoView",12,15,0,0
+"R4","4_a_2024","MailNews Core",45,17,1,1
+"R4","4_a_2024","Mozilla QA",0,0,0,0
+"R4","4_a_2024","mozilla.org",0,12,0,0
+"R4","4_a_2024","NSS",1,4,1,0
+"R4","4_a_2024","Release Engineering",3,22,0,0
+"R4","4_a_2024","Remote Protocol",7,11,0,0
+"R4","4_a_2024","support.mozilla.org",2,10,1,1
+"R4","4_a_2024","WebExtensions",7,6,1,0
+"R4","4_a_2024","Webtools",1,0,0,0
+"R4","4_b_2024","bugzilla.mozilla.org",4,22,0,0
+"R4","4_b_2024","CA Program",1,8,3,0
+"R4","4_b_2024","Calendar",4,5,0,0
+"R4","4_b_2024","Conduit",2,10,0,0
+"R4","4_b_2024","Data Platform and Tools",10,28,0,0
+"R4","4_b_2024","Developer Infrastructure",5,9,0,0
+"R4","4_b_2024","GeckoView",10,10,0,0
+"R4","4_b_2024","MailNews Core",17,8,1,0
+"R4","4_b_2024","Mozilla QA",0,1,0,0
+"R4","4_b_2024","mozilla.org",0,29,0,0
+"R4","4_b_2024","NSS",7,14,6,0
+"R4","4_b_2024","Release Engineering",4,27,1,0
+"R4","4_b_2024","Remote Protocol",3,6,0,0
+"R4","4_b_2024","support.mozilla.org",1,5,0,0
+"R4","4_b_2024","WebExtensions",17,16,1,1
+"R4","4_b_2024","Webtools",0,0,0,0
+"R5","5_a_2024","bugzilla.mozilla.org",4,13,0,1
+"R5","5_a_2024","CA Program",1,40,0,0
+"R5","5_a_2024","Calendar",10,6,0,0
+"R5","5_a_2024","Conduit",7,19,0,0
+"R5","5_a_2024","Data Platform and Tools",10,21,0,1
+"R5","5_a_2024","Developer Infrastructure",4,7,1,2
+"R5","5_a_2024","GeckoView",59,133,0,3
+"R5","5_a_2024","MailNews Core",31,11,2,0
+"R5","5_a_2024","Mozilla QA",0,3,5,0
+"R5","5_a_2024","mozilla.org",0,38,0,0
+"R5","5_a_2024","NSS",2,5,1,0
+"R5","5_a_2024","Release Engineering",4,19,0,0
+"R5","5_a_2024","Remote Protocol",7,15,0,0
+"R5","5_a_2024","support.mozilla.org",1,15,0,0
+"R5","5_a_2024","WebExtensions",14,9,0,0
+"R5","5_a_2024","Webtools",1,7,0,0
+"R5","5_b_2024","bugzilla.mozilla.org",8,69,1,1
+"R5","5_b_2024","CA Program",0,8,2,0
+"R5","5_b_2024","Calendar",7,8,0,1
+"R5","5_b_2024","Conduit",15,29,0,0
+"R5","5_b_2024","Data Platform and Tools",5,16,1,0
+"R5","5_b_2024","Developer Infrastructure",20,18,0,1
+"R5","5_b_2024","GeckoView",35,15,0,2
+"R5","5_b_2024","MailNews Core",56,28,3,3
+"R5","5_b_2024","Mozilla QA",0,7,1,0
+"R5","5_b_2024","mozilla.org",0,30,0,0
+"R5","5_b_2024","NSS",5,48,2,2
+"R5","5_b_2024","Release Engineering",3,31,1,1
+"R5","5_b_2024","Remote Protocol",14,15,0,0
+"R5","5_b_2024","support.mozilla.org",1,37,0,0
+"R5","5_b_2024","WebExtensions",29,47,0,2
+"R5","5_b_2024","Webtools",3,14,0,2
+"R5","6_a_2024","bugzilla.mozilla.org",4,11,0,1
+"R5","6_a_2024","CA Program",0,19,0,0
+"R5","6_a_2024","Calendar",13,1,2,0
+"R5","6_a_2024","Conduit",2,14,0,0
+"R5","6_a_2024","Data Platform and Tools",3,14,1,0
+"R5","6_a_2024","Developer Infrastructure",4,5,0,0
+"R5","6_a_2024","GeckoView",14,14,1,0
+"R5","6_a_2024","MailNews Core",29,8,3,3
+"R5","6_a_2024","Mozilla QA",0,23,0,0
+"R5","6_a_2024","mozilla.org",1,24,0,0
+"R5","6_a_2024","NSS",7,10,1,0
+"R5","6_a_2024","Release Engineering",4,35,0,0
+"R5","6_a_2024","Remote Protocol",14,25,0,1
+"R5","6_a_2024","support.mozilla.org",1,15,0,0
+"R5","6_a_2024","WebExtensions",33,14,0,2
+"R5","6_a_2024","Webtools",5,16,0,0
+"R5","6_b_2024","bugzilla.mozilla.org",2,14,1,0
+"R5","6_b_2024","CA Program",0,77,1,1
+"R5","6_b_2024","Calendar",48,8,0,0
+"R5","6_b_2024","Conduit",9,25,0,0
+"R5","6_b_2024","Data Platform and Tools",12,28,1,0
+"R5","6_b_2024","Developer Infrastructure",10,20,0,0
+"R5","6_b_2024","GeckoView",2,15,0,0
+"R5","6_b_2024","MailNews Core",27,9,1,0
+"R5","6_b_2024","Mozilla QA",0,20,1,0
+"R5","6_b_2024","mozilla.org",0,20,0,0
+"R5","6_b_2024","NSS",5,11,2,0
+"R5","6_b_2024","Release Engineering",8,27,2,0
+"R5","6_b_2024","Remote Protocol",27,14,1,1
+"R5","6_b_2024","support.mozilla.org",1,8,0,0
+"R5","6_b_2024","WebExtensions",20,15,1,0
+"R5","6_b_2024","Webtools",17,16,0,0
+"R6","7_a_2024","bugzilla.mozilla.org",1,14,0,0
+"R6","7_a_2024","CA Program",1,14,0,0
+"R6","7_a_2024","Calendar",6,5,0,1
+"R6","7_a_2024","Conduit",3,5,0,0
+"R6","7_a_2024","Data Platform and Tools",16,16,1,0
+"R6","7_a_2024","Developer Infrastructure",7,11,1,1
+"R6","7_a_2024","GeckoView",27,6,0,1
+"R6","7_a_2024","MailNews Core",44,22,3,4
+"R6","7_a_2024","Mozilla QA",4,25,4,0
+"R6","7_a_2024","mozilla.org",3,10,0,0
+"R6","7_a_2024","NSS",2,5,0,0
+"R6","7_a_2024","Release Engineering",4,21,1,1
+"R6","7_a_2024","Remote Protocol",13,28,0,0
+"R6","7_a_2024","support.mozilla.org",6,10,1,0
+"R6","7_a_2024","WebExtensions",22,11,2,1
+"R6","7_a_2024","Webtools",3,4,0,0
+"R6","7_b_2024","bugzilla.mozilla.org",1,25,0,1
+"R6","7_b_2024","CA Program",0,9,4,0
+"R6","7_b_2024","Calendar",9,4,0,0
+"R6","7_b_2024","Conduit",14,26,0,0
+"R6","7_b_2024","Data Platform and Tools",13,17,1,0
+"R6","7_b_2024","Developer Infrastructure",3,9,0,0
+"R6","7_b_2024","GeckoView",35,13,1,3
+"R6","7_b_2024","MailNews Core",30,18,0,0
+"R6","7_b_2024","Mozilla QA",0,25,0,0
+"R6","7_b_2024","mozilla.org",0,24,0,0
+"R6","7_b_2024","NSS",3,13,0,0
+"R6","7_b_2024","Release Engineering",9,21,1,2
+"R6","7_b_2024","Remote Protocol",6,11,0,0
+"R6","7_b_2024","support.mozilla.org",3,12,1,0
+"R6","7_b_2024","WebExtensions",21,22,10,3
+"R6","7_b_2024","Webtools",5,21,0,0
+"R6","8_a_2024","bugzilla.mozilla.org",1,12,1,0
+"R6","8_a_2024","CA Program",1,11,5,0
+"R6","8_a_2024","Calendar",6,2,0,1
+"R6","8_a_2024","Conduit",4,7,0,0
+"R6","8_a_2024","Data Platform and Tools",8,23,0,0
+"R6","8_a_2024","Developer Infrastructure",5,6,0,0
+"R6","8_a_2024","GeckoView",21,14,0,4
+"R6","8_a_2024","MailNews Core",12,7,0,1
+"R6","8_a_2024","Mozilla QA",0,25,3,1
+"R6","8_a_2024","mozilla.org",0,12,0,0
+"R6","8_a_2024","NSS",1,6,1,1
+"R6","8_a_2024","Release Engineering",3,3,0,1
+"R6","8_a_2024","Remote Protocol",9,30,1,2
+"R6","8_a_2024","support.mozilla.org",0,8,0,1
+"R6","8_a_2024","WebExtensions",16,10,2,2
+"R6","8_a_2024","Webtools",3,5,1,0
+"R6","8_b_2024","bugzilla.mozilla.org",2,19,1,0
+"R6","8_b_2024","CA Program",0,29,17,0
+"R6","8_b_2024","Calendar",7,3,1,0
+"R6","8_b_2024","Conduit",7,18,0,0
+"R6","8_b_2024","Data Platform and Tools",14,10,1,0
+"R6","8_b_2024","Developer Infrastructure",5,7,0,0
+"R6","8_b_2024","GeckoView",33,7,0,1
+"R6","8_b_2024","MailNews Core",22,7,1,1
+"R6","8_b_2024","Mozilla QA",0,21,1,0
+"R6","8_b_2024","mozilla.org",0,26,0,0
+"R6","8_b_2024","NSS",3,14,0,0
+"R6","8_b_2024","Release Engineering",4,15,0,1
+"R6","8_b_2024","Remote Protocol",24,21,0,4
+"R6","8_b_2024","support.mozilla.org",1,1,0,0
+"R6","8_b_2024","WebExtensions",20,9,1,3
+"R6","8_b_2024","Webtools",1,1,0,0
