@@ -6,7 +6,7 @@ This folder contains spreadsheet-based calculations supporting the analysis, val
 
 1. **1. Bi-monthly d-set calculations.xlsx**
    - Contains the primary computations for generating product rankings based on bi-monthly aggregated data.
-   - Includes intermediate steps for IVIF parameter construction, aggregation, and final ranking.
+   - Includes intermediate steps for IVIF parameter construction, d-set aggregation, and final ranking.
 
 2. **2. Perturbation 5.xlsx**
    - Implements a 5% perturbation to input parameters.
