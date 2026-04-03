@@ -887,40 +887,55 @@ minmax_norm_window &lt;- function(data, window_name,
     mutate(across(all_of(cost_cols), norm_fun_cost))
 
   # Aggregate min/max normalized values by product.
-  agg_norm &lt;- out %&gt;%
-    group_by(Product) %&gt;%
-    summarise(
-      New_min      = min(New, na.rm = TRUE),
-      New_max      = max(New, na.rm = TRUE),
-      Fixed_min    = min(Fixed, na.rm = TRUE),
-      Fixed_max    = max(Fixed, na.rm = TRUE),
-      Assigned_min = min(Assigned, na.rm = TRUE),
-      Assigned_max = max(Assigned, na.rm = TRUE),
-      Reopened_min = min(Reopened, na.rm = TRUE),
-      Reopened_max = max(Reopened, na.rm = TRUE),
-      .groups = &quot;drop&quot;
-    )
 
-  # Construct Omega and Theta values.
-  agg_norm &lt;- agg_norm %&gt;%
-    mutate(
-      Omega_N_min = New_min / (1 + New_max - New_min),
-      Omega_N_max = New_max / (1 + New_max - New_min),
-      Omega_F_min = Fixed_min / (1 + Fixed_max - Fixed_min),
-      Omega_F_max = Fixed_max / (1 + Fixed_max - Fixed_min),
-      Omega_A_min = Assigned_min / (1 + Assigned_max - Assigned_min),
-      Omega_A_max = Assigned_max / (1 + Assigned_max - Assigned_min),
-      Omega_R_min = Reopened_min / (1 + Reopened_max - Reopened_min),
-      Omega_R_max = Reopened_max / (1 + Reopened_max - Reopened_min),
-      Theta_N_min = (1 - New_max) / (1 + New_max - New_min),
-      Theta_N_max = (1 - New_min) / (1 + New_max - New_min),
-      Theta_F_min = (1 - Fixed_max) / (1 + Fixed_max - Fixed_min),
-      Theta_F_max = (1 - Fixed_min) / (1 + Fixed_max - Fixed_min),
-      Theta_A_min = (1 - Assigned_max) / (1 + Assigned_max - Assigned_min),
-      Theta_A_max = (1 - Assigned_min) / (1 + Assigned_max - Assigned_min),
-      Theta_R_min = (1 - Reopened_max) / (1 + Reopened_max - Reopened_min),
-      Theta_R_max = (1 - Reopened_min) / (1 + Reopened_max - Reopened_min)
-    )
+agg_norm &lt;- out %&gt;%
+  group_by(Product) %&gt;%
+  summarise(
+    # Original min/max
+    New_min        = min(New, na.rm = TRUE),
+    New_max        = max(New, na.rm = TRUE),
+    Fixed_min      = min(Fixed, na.rm = TRUE),
+    Fixed_max      = max(Fixed, na.rm = TRUE),
+    Assigned_min   = min(Assigned, na.rm = TRUE),
+    Assigned_max   = max(Assigned, na.rm = TRUE),
+    Reopened_min   = min(Reopened, na.rm = TRUE),
+    Reopened_max   = max(Reopened, na.rm = TRUE),
+
+    # 1 - value min/max
+    New_1_min      = min(1 - New, na.rm = TRUE),
+    New_1_max      = max(1 - New, na.rm = TRUE),
+    Fixed_1_min    = min(1 - Fixed, na.rm = TRUE),
+    Fixed_1_max    = max(1 - Fixed, na.rm = TRUE),
+    Assigned_1_min = min(1 - Assigned, na.rm = TRUE),
+    Assigned_1_max = max(1 - Assigned, na.rm = TRUE),
+    Reopened_1_min = min(1 - Reopened, na.rm = TRUE),
+    Reopened_1_max = max(1 - Reopened, na.rm = TRUE),
+
+    .groups = &quot;drop&quot;
+  )
+# Construct Omega and Theta values.
+agg_norm &lt;- agg_norm %&gt;%
+  mutate(
+    Omega_N_min = New_min / (New_max + New_1_max),
+    Omega_N_max = New_max / (New_max + New_1_max),
+    Theta_N_min = New_1_min / (New_max + New_1_max),
+    Theta_N_max = New_1_max / (New_max + New_1_max),
+
+    Omega_F_min = Fixed_min / (Fixed_max + Fixed_1_max),
+    Omega_F_max = Fixed_max / (Fixed_max + Fixed_1_max),
+    Theta_F_min = Fixed_1_min / (Fixed_max + Fixed_1_max),
+    Theta_F_max = Fixed_1_max / (Fixed_max + Fixed_1_max),
+
+    Omega_A_min = Assigned_min / (Assigned_max + Assigned_1_max),
+    Omega_A_max = Assigned_max / (Assigned_max + Assigned_1_max),
+    Theta_A_min = Assigned_1_min / (Assigned_max + Assigned_1_max),
+    Theta_A_max = Assigned_1_max / (Assigned_max + Assigned_1_max),
+
+    Omega_R_min = Reopened_min / (Reopened_max + Reopened_1_max),
+    Omega_R_max = Reopened_max / (Reopened_max + Reopened_1_max),
+    Theta_R_min = Reopened_1_min / (Reopened_max + Reopened_1_max),
+    Theta_R_max = Reopened_1_max / (Reopened_max + Reopened_1_max)
+  )
 
   # Apply alpha and beta interval weights from the external IVIF specification.
   agg_norm &lt;- agg_norm %&gt;%
@@ -1103,7 +1118,7 @@ timing_summary &lt;- data.frame(
 
 print(timing_summary)</code></pre>
 <pre><code>##            start_time            end_time execution_time_sec
-## 1 2026-04-03 08:32:35 2026-04-03 08:32:43            7.89277</code></pre>
+## 1 2026-04-03 17:38:52 2026-04-03 17:39:08           15.77901</code></pre>
 </div>
 
 
