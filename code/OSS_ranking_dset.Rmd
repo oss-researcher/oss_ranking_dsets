@@ -1,6 +1,6 @@
 ---
 title: "OSS Ranking using d-set"
-author: "Anonymous"
+author: "OSS Researcher"
 date: "2024-09-16"
 output: html_document
 ---
@@ -10,13 +10,13 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 # Start time
 start_time <- Sys.time()
-cat(Sys.time())
+
 
 ENABLE_VIEW <- FALSE
 
 View <- function(x, ...) {
 
-  if (ENABLE_VIEW) utils::View(x)
+  if (ENABLE_VIEW) utils::View(x, ...)
 }
 
 ```
@@ -131,8 +131,8 @@ View(month_data)
 ```
 
 ## 4. Product-Status-Resolution Aggregation
-# There are 5 status under study - NEW, ASSIGNED, REOPENED are N-A-R used as-is in study
-# Other two status RESOLVED and VERIFIED are called F-Fixed in study as that belongs to resolution=FIXED in BugZilla
+### There are 5 status under study - NEW, ASSIGNED, REOPENED are N-A-R used as-is in study
+### Other two status RESOLVED and VERIFIED are called F-Fixed in study as that belongs to resolution=FIXED in BugZilla
 
 ```{r product-status-resolution}
 # Count distinct bugs by month, product, status, and resolution.
@@ -155,7 +155,7 @@ cat("\n prod_dataset gives the final dataset at granular level with fields under
 View(prod_dataset)
 ```
 
-## 5. Construct Monthly NFAR Matrices
+## 5. Construct Monthly N-F-A-R Matrices
 
 ### 5.1 New Bugs
 
@@ -269,7 +269,7 @@ View(reopened_prod)
  cat("reopened_prod gives the count for each product and bi-monthly for status=REOPENED")
 ```
 
-## 6. Build the Bi-monthly NFAR Dataset
+## 6. Build the Bi-monthly N-F-A-R Dataset
 
 ```{r bimonthly-construction}
 # Create a template bi-monthly dataset for all products.
@@ -296,7 +296,7 @@ for (i in 1:n_prod) {
   bimonthly_all[i + n_prod * c(0, 1, 2, 3, 4, 5), 2] <- rownames(new_prod)[i]
 }
 
-# Convert monthly matrices to a long format, then aggregate to bi-monthly NFAR values.
+# Convert monthly matrices to a long format, then aggregate to bi-monthly N-F-A-R values.
 df_long <- bind_rows(
   as.data.frame(new_prod)      %>% rownames_to_column("Product") %>% mutate(Metric = "New"),
   as.data.frame(fixed_prod)    %>% rownames_to_column("Product") %>% mutate(Metric = "Fixed"),
@@ -327,7 +327,7 @@ bi_labels <- sapply(seq(1, length(month_levels), by = 2), function(i) {
   }
 })
 
-# Aggregate adjacent months into bi-monthly NFAR totals.
+# Aggregate adjacent months into bi-monthly N-F-A-R totals.
 df_bi_sum <- df_long %>%
   mutate(
     Month_Year = factor(Month_Year, levels = month_levels),
@@ -359,7 +359,7 @@ bimonthly_all <- bimonthly_all %>%
 write.csv(bimonthly_all, file = file.path(output_path, "bimonthly_all.csv"), row.names = FALSE)
 ```
 
-## 7. Half-monthly Dataset Construction fr each of the bi-monthly's indvidual d-set
+## 7. Half-monthly Dataset Construction for each of the bi-monthly's indvidual d-set
 
 ```{r half-month-index}
 # Create half-month labels: a = days 1-15, b = days 16-end.
@@ -418,10 +418,10 @@ nrow(half_prod_dataset)
  cat("\nif the sets are less, there must be no status information for certain half-monthly-product-status groups\n")
 ```
 
-## 8. Build Half-monthly NFAR Dataset and Windows R1-R6
+## 8. Build Half-monthly N-F-A-R Dataset and Windows R1-R6
 
-```{r half-monthly-nfar}
-# Create half-monthly NFAR counts by product.
+```{r half-monthly-N-F-A-R}
+# Create half-monthly N-F-A-R counts by product.
 half_monthly <- init_dataset %>%
   mutate(
     updated = as.Date(updated),
@@ -488,7 +488,7 @@ write.csv(half_monthly, file = file.path(output_path, "half_monthly.csv"), row.n
 ```
 
 ## 9. d-set Calculations-common function
-
+### IVIF-set calculations and kappa are taken from baseline bi-monthly excel
 ```{r dset-function}
  cat("\nThis block has the d-set calculation steps and will be called for the calculation of d-set for main as well as temporal sets\n")
 
@@ -564,26 +564,29 @@ minmax_norm_window <- function(data, window_name,
   # Apply alpha and beta interval weights from the external IVIF specification.
   agg_norm <- agg_norm %>%
     mutate(
-      ABCD_N_min = Omega_N_min * 0.02,
-      ABCD_N_max = Omega_N_max * 0.10,
-      ABCD_F_min = Omega_F_min * 0.40,
-      ABCD_F_max = Omega_F_max * 0.55,
-      ABCD_A_min = Omega_A_min * 0.44,
-      ABCD_A_max = Omega_A_max * 0.76,
+      ABCD_N_min = Omega_N_min * 0.015,
+      ABCD_N_max = Omega_N_max * 0.067,
+      ABCD_N_min_beta = Theta_N_min * 0.074,
+      ABCD_N_max_beta = Theta_N_max * 0.207,
+      
+      ABCD_F_min = Omega_F_min * 0.402,
+      ABCD_F_max = Omega_F_max * 0.552,
+      ABCD_F_min_beta = Theta_F_min * 0.230,
+      ABCD_F_max_beta = Theta_F_max * 0.379,
+      
+      ABCD_A_min = Omega_A_min * 0.455,
+      ABCD_A_max = Omega_A_max * 0.788,
+       ABCD_A_min_beta = Theta_A_min * 0.121,
+      ABCD_A_max_beta = Theta_A_max * 0.242,
+      
       ABCD_R_min = Omega_R_min * 0.00,
-      ABCD_R_max = Omega_R_max * 0.08,
-      ABCD_N_min_beta = Theta_N_min * 0.11,
-      ABCD_N_max_beta = Theta_N_max * 0.32,
-      ABCD_F_min_beta = Theta_F_min * 0.23,
-      ABCD_F_max_beta = Theta_F_max * 0.38,
-      ABCD_A_min_beta = Theta_A_min * 0.12,
-      ABCD_A_max_beta = Theta_A_max * 0.24,
-      ABCD_R_min_beta = Theta_R_min * 0.17,
-      ABCD_R_max_beta = Theta_R_max * 0.42
+      ABCD_R_max = Omega_R_max * 0.083,
+      ABCD_R_min_beta = Theta_R_min * 0.167,
+      ABCD_R_max_beta = Theta_R_max * 0.417
     )
 
   # Compute aggregated IVIF measures.
-  Kappa <- 2.0968
+  Kappa <- 2.1309
   agg_norm <- agg_norm %>%
     mutate(
       U_min = (ABCD_N_min + ABCD_F_min + ABCD_A_min + ABCD_R_min) / Kappa,
@@ -682,12 +685,12 @@ get_rank_df <- function(df, rank_col_name) {
 
 rank_compare <- rank_compare %>%
   left_join(get_rank_df(R_star_calc, "R_star"), by = "Product") %>%
-  left_join(get_rank_df(W1_calc, "R1"), by = "Product") %>%
-  left_join(get_rank_df(W2_calc, "R2"), by = "Product") %>%
-  left_join(get_rank_df(W3_calc, "R3"), by = "Product") %>%
-  left_join(get_rank_df(W4_calc, "R4"), by = "Product") %>%
-  left_join(get_rank_df(W5_calc, "R5"), by = "Product") %>%
-  left_join(get_rank_df(W6_calc, "R6"), by = "Product") %>%
+  left_join(get_rank_df(R1_calc, "R1"), by = "Product") %>%
+  left_join(get_rank_df(R2_calc, "R2"), by = "Product") %>%
+  left_join(get_rank_df(R3_calc, "R3"), by = "Product") %>%
+  left_join(get_rank_df(R4_calc, "R4"), by = "Product") %>%
+  left_join(get_rank_df(R5_calc, "R5"), by = "Product") %>%
+  left_join(get_rank_df(R6_calc, "R6"), by = "Product") %>%
   arrange(tolower(Product))
 cat("\nrank_compare gives the ranks R* and temporal windows ranks R1-R6.\n")
 View(rank_compare)
@@ -728,6 +731,7 @@ View(corr_results)
 write.csv(corr_results, file = file.path(output_path, "rank_correlations.csv"), row.names = FALSE)
 
 ```
+## Time taken in running the code
 ```{r print execution duration}
 end_time <- Sys.time()
 

@@ -1,6 +1,6 @@
 # README.md
 
-This code takes approx. 10 seconds to execute.
+This code takes approx. 8 seconds to execute.
 
 ## Overview
 
@@ -18,6 +18,8 @@ The workflow includes:
 ---
 
 ## Important Notes
+
+---
 
 ### 1. `View()` is Disabled
 
@@ -154,6 +156,21 @@ Intermediate files (e.g., half_month_data.csv, half_monthly.csv):
 Do not manually modify these files.
 
 ---
+
+## Rendered HTML Report
+
+The file `OSS_ranking_dset.html` is the knitted HTML output generated from `OSS_ranking_dset.Rmd`.
+
+- It contains the complete rendered analysis, including methodology, intermediate results, tables, and final rankings.
+- It is provided for direct viewing without requiring code execution.
+
+To regenerate the HTML report:
+
+```r
+rmarkdown::render("OSS_ranking_dset.Rmd", output_format = "html_document")
+```
+
+----
 
 ## Summary
 
