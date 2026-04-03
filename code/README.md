@@ -141,7 +141,8 @@ source("OSS_ranking_dset.Rmd")
 
 ## Common Issues
 
-- File not found → Missing CSV in ../data/  
+- File not found → Missing CSV in ../data/
+- If any file in ../output/ directory is open, corresponding r-chunk fails
 
 ---
 
