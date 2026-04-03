@@ -1,17 +1,17 @@
 "Product","R_star","R1","R2","R3","R4","R5","R6"
-"bugzilla.mozilla.org",8,6,3,14,6,7,4
-"CA Program",1,5,4,3,3,3,2
-"Calendar",14,12,15,11,16,15,14
-"Conduit",7,16,8,13,11,8,6
+"bugzilla.mozilla.org",8,6,3,10,7,7,4
+"CA Program",1,5,4,4,3,3,2
+"Calendar",16,12,16,11,16,14,14
+"Conduit",6,16,8,14,10,8,6
 "Data Platform and Tools",3,4,1,2,2,9,5
-"Developer Infrastructure",9,1,14,9,8,13,9
+"Developer Infrastructure",9,1,15,9,8,15,10
 "GeckoView",13,9,9,12,9,11,16
-"MailNews Core",15,11,10,15,15,14,15
-"Mozilla QA",4,14,13,10,10,1,1
+"MailNews Core",14,11,10,15,14,12,15
+"Mozilla QA",4,15,13,13,12,1,1
 "mozilla.org",2,2,2,1,4,2,3
-"NSS",16,8,16,8,5,5,8
+"NSS",15,8,14,8,5,5,8
 "Release Engineering",5,3,5,5,1,6,13
-"Remote Protocol",10,7,6,7,7,10,12
-"support.mozilla.org",6,10,12,6,12,4,11
-"WebExtensions",12,15,7,4,14,12,10
-"Webtools",11,13,11,16,13,16,7
+"Remote Protocol",10,7,6,7,6,10,11
+"support.mozilla.org",7,10,12,6,13,4,12
+"WebExtensions",12,13,7,3,15,13,9
+"Webtools",11,14,11,16,11,16,7
